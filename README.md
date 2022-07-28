@@ -1,15 +1,16 @@
-# X Lab
+# Putting it All Together: ORMs Lab
 
 ## Learning Goals
 
-- Learning goal 1.
-- Learning goal 2.
+- Create Python objects using SQL database records.
+- Create SQL database records using Python objects.
 
 ***
 
 ## Key Vocab
 
-- **Vocab Term**: definition. Continuation of definition.
+- **Object-Relational Mapping (ORM)**: a technique used to convert database
+records into objects in an object-oriented language.
 
 ***
 
@@ -33,7 +34,5 @@ submit.
 
 ## Resources
 
-- [Resource 1](https://www.python.org/doc/essays/blurb/)
-- [Reused Resource][reused resource]
-
-[reused resource]: https://docs.python.org/3/
+- [sqlite3 - DB-API 2.0 interface for SQLite databases - Python](https://docs.python.org/3/library/sqlite3.html)
+- [What is an ORM, how does it work, and how should I use one? - Stack Overflow](https://stackoverflow.com/questions/1279613/what-is-an-orm-how-does-it-work-and-how-should-i-use-one)
