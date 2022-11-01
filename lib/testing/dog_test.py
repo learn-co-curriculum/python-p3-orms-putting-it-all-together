@@ -1,7 +1,4 @@
-import sqlite3
-
-from lib import CONN, CURSOR
-from lib.dog import Dog
+from dog import Dog, CONN, CURSOR
 
 class TestDog:
     '''Class Dog in dog.py'''
@@ -29,7 +26,7 @@ class TestDog:
         Dog.drop_table()
 
         sql_table_names = """
-            SELECT name FROM sqlite_schema
+            SELECT name FROM sqlite_master
             WHERE type='table'
             ORDER BY name
         """
