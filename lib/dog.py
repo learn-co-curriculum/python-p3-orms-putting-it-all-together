@@ -1,4 +1,7 @@
-from . import CONN, CURSOR
+import sqlite3
+
+CONN = sqlite3.connect('lib/dogs.db')
+CURSOR = CONN.cursor()
 
 class Dog:
     

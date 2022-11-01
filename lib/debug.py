@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
-from lib import CONN, CURSOR
-from lib.dog import Dog
+from dog import Dog, CONN, CURSOR
 
 sql = """
     DROP TABLE IF EXISTS dogs

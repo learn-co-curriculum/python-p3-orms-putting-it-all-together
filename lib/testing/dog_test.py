@@ -1,14 +1,7 @@
-import sqlite3
-
-from lib import CONN, CURSOR
-from lib.dog import Dog
+from dog import Dog, CONN, CURSOR
 
 class TestDog:
     '''Class Dog in dog.py'''
-
-    def test_performs_behavior(self):
-        '''performs behavior when something happens.'''
-        assert(True)
 
     def test_has_name_and_breed_attributes(self):
         '''initializes with name and breed attributes.'''
