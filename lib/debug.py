@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
-from lib import CONN, CURSOR
-from lib.dog import Dog
+from dog import Dog, CONN, CURSOR
 
 sql = """
     DROP TABLE IF EXISTS dogs
@@ -15,4 +14,4 @@ joey.save()
 fanny = Dog("fanny", "cockapoo")
 fanny.save()
 
-import pytest; pytest.set_trace()
+import ipdb; ipdb.set_trace()
