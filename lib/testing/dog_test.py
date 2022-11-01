@@ -26,7 +26,7 @@ class TestDog:
         Dog.drop_table()
 
         sql_table_names = """
-            SELECT name FROM sqlite_schema
+            SELECT name FROM sqlite_master
             WHERE type='table'
             ORDER BY name
         """
