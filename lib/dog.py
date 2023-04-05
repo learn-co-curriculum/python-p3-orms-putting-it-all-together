@@ -20,6 +20,7 @@ class Dog:
         """
 
         CURSOR.execute(sql)
+        CONN.commit()
 
     @classmethod
     def drop_table(cls):
@@ -28,6 +29,7 @@ class Dog:
         """
 
         CURSOR.execute(sql)
+        CONN.commit()
 
     def save(self):
         sql = """
@@ -36,6 +38,7 @@ class Dog:
         """
 
         CURSOR.execute(sql, (self.name, self.breed))
+        CONN.commit()
 
         # solution for bonus methods
         self.id = CURSOR.lastrowid
@@ -142,3 +145,4 @@ class Dog:
         """
 
         CURSOR.execute(sql, (self.name, self.breed, self.id))
+        CONN.commit()
